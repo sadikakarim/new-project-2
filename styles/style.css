@@ -1,0 +1,274 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans";
+  width: 100%;
+}
+
+
+/* BANNER AND HEADING */
+.header{
+  height: 100%;
+  width: 1500px;
+ 
+  background-color: bisque; 
+  
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+.nav-title{
+  font-weight: 700;
+  font-size: 45px;
+  margin-bottom: 150px;
+  margin: 50px 150px;
+}
+nav ul{
+  display: flex;
+  justify-content: space-around;
+}
+nav li{
+  list-style: none;
+  margin: 25px;
+  font-weight: 500;
+  font-size: 18px;
+}
+/* BANNER */
+.banner{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.banner-title{
+  font-weight: 700;
+  font-size: 64px;
+}
+.banner-details{
+  margin-top: 10px;
+font-weight: 400;
+font-size: 16px;
+color: #727272;
+}
+.btn{
+  color: rgb(250, 248, 248);
+  font-weight: 600;
+  font-size: 20px;
+  border: 0px;
+  padding: 21px 20px;
+  background-color: #FF900E;
+  border-radius: 10px;
+  width: 180px;
+  margin-top: 20px;
+}
+.img{
+  padding: 50px 200px; 
+}
+
+
+/* grid-section */
+.grid-flex{
+  display: flex;
+  align-items: center;
+  margin-top: 130px; 
+}
+
+.photo-gallery{
+  display: grid;
+  grid-template-columns:repeat(2,342px);
+  gap: 40px;
+ padding: 70px;
+}
+/* text style */
+.title{
+  font-size: 40px;
+  font-weight:400;
+  color: #727272;
+}
+.bold{
+  font-weight:600;
+  font-family: 'Work Sans', sans-serif;
+  color: #000;
+}
+.color{
+ color: #FF900E
+}
+.details{
+  font-weight: 400;
+  font-size: 16px;
+ color: #727272
+}
+
+/* feature */
+.feature {
+  display: flex;
+  margin-top: 100px;
+ width: 1440px;
+ 
+ 
+}
+.v{
+  height:106px;
+  color: #FF900E;
+  border-left: 5px solid;
+
+}
+.title-f{
+  font-size: 45px;
+  font-weight: 700;
+
+}
+.feature-title{
+  margin-top: 20px;
+}
+.t-description{
+  font-size: 16px;
+  font-weight: 400;
+  color: #727272;
+  margin-top: 30px;
+}
+.feature-image{
+  padding-right: 0px; 
+}
+.description{
+  font-size: 16px;
+  font-weight: 400;
+  color: #727272;
+  gap: 20px;
+
+}
+.btn3{
+ 
+  position: relative;
+  width: 200px;
+  height: 100px;
+  background: #FF900E;
+  color: #FFFFFF;
+  border-radius: 5px;
+  border: 0;
+   bottom: 100px;
+   right: 60px;
+   font-size: 16px;
+   font-weight: 400;
+}
+
+  /* facts style */
+.facts-title{
+  margin-top: 130px;
+  font-weight: 700;
+  font-size: 45px;
+ margin-left: 70px;
+}
+.facts-description{
+  color: #727272;
+  font-weight: 400;
+  font-size: 16px;
+  margin-left: 70px;
+}
+
+
+  .icon{
+    height: 45px;
+    width: 45px;
+  }
+  .skills-container{
+    display: flex;
+    justify-content: space-around;
+
+  }
+  .skill{
+    margin-top: 80px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 8px;
+    border: 1px solid 
+    #FF900E;
+    width: 250px;
+    height: 200px;
+    padding: 45px 40px;
+   
+    transition: width 5s, height 5s, transform 5s;
+
+  }
+  .skill:hover{
+    width: 300px;
+    height: 260px;
+    transform: rotate(30deg);
+  }
+  .skill-title{
+    margin-top: 10px;
+    font-size: 45px;
+    font-weight: 400;
+
+  }
+  .skill-description{
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #727272;
+  }
+
+ 
+
+  /* sponsers */
+  .sponsers-section{
+    text-align: center;
+    margin-top: 180px;
+
+  }
+  .sponsers-title{
+    font-weight: 700;
+    font-size: 45px;
+}
+.section-description{
+  font-weight: 400;
+  font-size: 16px;
+  color: #727272;
+}
+  .sponsers{
+    margin-top: 50px;
+    width: 135px;
+    height: 45px;
+    
+}
+  .sponser-container{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .footer{
+    margin-top: 170px;
+    font-weight: 400;
+    font-size: 20px;
+    background-color: bisque;
+    width: 920px;
+    height: 23px;
+  color: #424242;
+    padding: 30px 200px;
+    margin-left: 240px;
+  }
+
+
+  /* MOBILE MEDIA */
+  @media screen and (max-width:576px){
+ .img{
+  
+   align-items:center
+ }
+ 
+    .skills-container, 
+    .sponser-container, 
+    .feature,
+     .grid-flex{
+      flex-direction: column;
+      padding: 10px 20px;
+    }
+
+    
+  
+
+  }
+  
+  
